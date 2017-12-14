@@ -1,0 +1,31 @@
+{
+  "name": "ding-api",
+  "version": "0.0.1",
+  "description": "钉钉服务端API",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeyuqiudeng/ding-api.git"
+  },
+  "keywords": [
+    "钉钉API",
+    "钉钉",
+    "ding-api"
+  ],
+  "author": "Hefty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeyuqiudeng/ding-api/issues"
+  },
+  "homepage": "https://github.com/yeyuqiudeng/ding-api#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "parse": "^1.11.0"
+  },
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
