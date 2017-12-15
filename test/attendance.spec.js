@@ -27,9 +27,16 @@ describe('Attendance', function () {
     })
   })
   describe('getAllUserAttendanceListRecord()', function() {
-    it.only('should ok', async function () {
+    it('should ok', async function () {
       const result = await dingApi.getAllUserAttendanceListRecord('2017-12-01 09:00:00', '2017-12-02 18:30:00')
       assert.ok(Array.isArray(result))
+    })
+  })
+  describe('getLeaveApproveDuration()', function () {
+    it.only('shold ok', async function () {
+      const result = await dingApi.getLeaveApproveDuration('105050601736317812', '2017-12-01 09:00:00', '2017-12-02 18:30:00')
+      assert.equal(result.success, true)
+      assert.ok(typeof result.duration_in_minutes === 'number')
     })
   })
 })
