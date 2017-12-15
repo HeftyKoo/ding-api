@@ -51,7 +51,7 @@ describe('User', function () {
     })
   })
   describe('getAllUserList()', function() {
-    it.only('should ok', async function () {
+    it('should ok', async function () {
       const result = await dingApi.getAllUserList()
       assert.ok(Array.isArray(result))
     })

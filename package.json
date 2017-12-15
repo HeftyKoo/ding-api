@@ -4,7 +4,7 @@
   "description": "钉钉服务端API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha -t 100000 test"
   },
   "repository": {
     "type": "git",
