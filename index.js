@@ -4,13 +4,15 @@ const Department = require('./lib/department')
 const User = require('./lib/user')
 const Attendance = require('./lib/attendance')
 const Bpms = require('./lib/bpms')
+const Role = require('./lib/role')
 
 class DingApi extends mixin(
   Common, 
   Department, 
   User,
   Attendance,
-  Bpms
+  Bpms,
+  Role
 ) {
   constructor (getToken) {
     super()

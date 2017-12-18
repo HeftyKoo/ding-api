@@ -9,7 +9,7 @@ describe('User', function () {
     return token.get('access_token')
   })
   describe('getUserDetailById()', function () {
-    it('should ok', async function () {
+    it.only('should ok', async function () {
       const result = await dingApi.getUserDetailById('105050601736317812')
       assert.equal(result.errcode, 0)
     })
