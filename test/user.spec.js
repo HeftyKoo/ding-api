@@ -55,11 +55,21 @@ describe('User', function () {
       const result = await dingApi.getAllUserList()
       assert.ok(Array.isArray(result))
     })
+    it('should uniq', async function () {
+      const result = await dingApi.getAllUserList()
+      const userids = [...new Set(result.map(item => item.userid))]
+      assert.equal(userids.length, result.length)
+    })
   })
   describe('getAllUserDetailList()', function() {
     it('should ok', async function () {
       const result = await dingApi.getAllUserDetailList()
       assert.ok(Array.isArray(result))
+    })
+    it('should uniq', async function () {
+      const result = await dingApi.getAllUserDetailList()
+      const userids = [...new Set(result.map(item => item.userid))]
+      assert.equal(userids.length, result.length)
     })
   })
 })
