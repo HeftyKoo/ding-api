@@ -21,8 +21,8 @@ describe('Attendance', function () {
     })
   })
   describe('getAttendanceListRecord()', function() {
-    it('should ok', async function () {
-      const result = await dingApi.getAttendanceListRecord('2017-12-01 09:00:00', '2017-12-08 18:30:00',['105050601736317812'])
+    it.only('should ok', async function () {
+      const result = await dingApi.getAttendanceListRecord('2017-12-01 09:00:00', '2017-12-09 18:30:00',['105050601736317812'])
       assert.equal(result.errcode, 0)
     })
   })
